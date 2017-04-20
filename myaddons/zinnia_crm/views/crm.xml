@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- top level menu: no parent -->
+        <menuitem id="main_crm_menu" name="CRM"/>
+        <!-- A first level in the left side menu is needed
+             before using action= attribute -->
+        <menuitem id="openacademy_menu" name="Open Academy"
+                  parent="main_crm_menu"/>
+        <menuitem id="config_param_menu" name="Configuration parameter"
+                  parent="main_crm_menu"/>
+
+    </data>
+</odoo>

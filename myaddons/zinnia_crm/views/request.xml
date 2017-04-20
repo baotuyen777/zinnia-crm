@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="request_form_view">
+            <field name="name">Form request</field>
+            <field name="model">crm.request</field>
+            <field name="arch" type="xml">
+                <form string=" Form Request">
+                    <group>
+                        <field name="code"/>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
