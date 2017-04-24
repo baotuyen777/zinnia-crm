@@ -25,16 +25,17 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        # 'views/views.xml',
+        'views/views.xml',
         # 'views/templates.xml',
-        'views/crm.xml',
         'views/partner.xml',
         'views/landing_page_source.xml',
         'views/appointment.xml',
         'views/request.xml',
+        'views/product.xml',
+        'views/product_category.xml',
+        'views/machine.xml',
+        'views/treatment_card.xml'
 
-        # 'views/session_board.xml',
-        # 'views/openacademy.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

@@ -30,11 +30,11 @@
                                 <field name="field"/>
                                 <field name="contact_id"/>
                                 <field name="rate"/>
-                                <field name="product_sevice"/>
+                                <field name="product_id"/>
 
                             </group>
                             <group>
-                                <field name="type"/>
+                                <field name="call_type"/>
                                 <field name="agency_id"/>
                                 <field name="maketing_channel"/>
                                 <field name="phone_number"/>
@@ -66,7 +66,8 @@
         <record model="ir.actions.act_window" id="apm_list_action">
             <field name="name">Appointment</field>
             <field name="res_model">crm.apm</field>
+            <field name="domain">[('rate','=','success')]</field>
         </record>
-        <menuitem id="appointment_list_menu" action="apm_list_action" parent="partner_menu"/>
+        <menuitem id="appointment_list_menu" action="apm_list_action" parent="menu_heading_partner"/>
     </data>
 </odoo>

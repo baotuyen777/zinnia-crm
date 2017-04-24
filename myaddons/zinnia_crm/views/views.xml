@@ -1,59 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-  <data>
-    <!-- explicit list view definition -->
-    <!--
-    <record model="ir.ui.view" id="zinnia__crm.list">
-      <field name="name">Zinnia_CRM list</field>
-      <field name="model">zinnia__crm.zinnia__crm</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
-      </field>
-    </record>
-    -->
-
-    <!-- actions opening views on models -->
-    <!--
-    <record model="ir.actions.act_window" id="zinnia__crm.action_window">
-      <field name="name">Zinnia_CRM window</field>
-      <field name="res_model">zinnia__crm.zinnia__crm</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-    -->
-
-    <!-- server action to the one above -->
-    <!--
-    <record model="ir.actions.server" id="zinnia__crm.action_server">
-      <field name="name">Zinnia_CRM server</field>
-      <field name="model_id" ref="model_zinnia__crm_zinnia__crm"/>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": self._name,
-        }
-      </field>
-    </record>
-    -->
-
-    <!-- Top menu item -->
-    <!--
-    <menuitem name="Zinnia_CRM" id="zinnia__crm.menu_root"/>
-    -->
-    <!-- menu categories -->
-    <!--
-    <menuitem name="Menu 1" id="zinnia__crm.menu_1" parent="zinnia__crm.menu_root"/>
-    <menuitem name="Menu 2" id="zinnia__crm.menu_2" parent="zinnia__crm.menu_root"/>
-    -->
-    <!-- actions -->
-    <!--
-    <menuitem name="List" id="zinnia__crm.menu_1_list" parent="zinnia__crm.menu_1"
-              action="zinnia__crm.action_window"/>
-    <menuitem name="Server to list" id="zinnia__crm" parent="zinnia__crm.menu_2"
-              action="zinnia__crm.action_server"/>
-    -->
-  </data>
+    <data>
+        <!-- top level menu: no parent -->
+        <menuitem id="crm_main_menu" name="CRM"/>
+        <!-- Heading left side menu -->
+        <menuitem id="menu_heading_partner" name="Partner infomation" parent="crm_main_menu" sequence="1"/>
+        <menuitem id="menu_heading_question" name="Question bank" parent="crm_main_menu" sequence="2"/>
+        <menuitem id="config_param_menu" name="Configuration parameter" parent="crm_main_menu" sequence="5"/>
+        <menuitem name="Product" id="menu_heading_product" parent="crm_main_menu" sequence="3"/>
+        <menuitem name="Treatment" id="menu_heading_treatment" parent="crm_main_menu" sequence="4"/>
+    </data>
 </odoo>
+

@@ -5,9 +5,9 @@ class Appointment(models.Model):
     _name='crm.apm'
     
     description=fields.Char(string='Description',required=True)
-    phone=fields.Integer(string="Phone", required=True)
+    phone=fields.Char(string="Phone", required=True)
     date=fields.Date(string="Date")
-    duration=fields.Datetime(string="Duration")
+    duration=fields.Char(string="Duration", default="01:00")
     purpose=fields.Selection([
         ('appointment_th','appointment TH'),
         ('appointment_tv', 'appointment TV'),
@@ -22,13 +22,10 @@ class Appointment(models.Model):
         ('success','Success'),
         ('potential','Potential'),
     ])
-    product_sevice=fields.Char()
+    product_id=fields.Many2one('crm.product',string ='Product service')
     employee=fields.Char()
-    type=fields.Selection([
-        ('incoming','Incoming call'),
-        ('callaway','Call away')
-    ],required=True)
-    agency_id=fields.Char()
+    call_type=fields.Many2one('crm.call_type', string="Call type")
+    agency_id=fields.Many2one('crm.agency',string='Agency')
     branch = fields.Selection([
         ('thucuc', 'Thu Cuc Hospital'),
         ('228tayson', '228 Tay son'),
