@@ -12,3 +12,4 @@ from . import call_type
 from . import agency
 from . import machine
 from . import treatment_card
+from . import qa

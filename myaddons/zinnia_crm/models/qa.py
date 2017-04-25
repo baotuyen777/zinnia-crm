@@ -6,6 +6,7 @@ class qa(models.Model):
     name=fields.Char(string='Name')
     is_use=fields.Boolean(string="Use")
     create_by=fields.Many2one('res.partner', string="Create by")
+    type=fields.Char(string="Type")
     key_word=fields.Char(string="Key word")
     date_create=fields.Datetime(string="Date create")
     field=fields.Char()

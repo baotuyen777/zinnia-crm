@@ -34,7 +34,8 @@
         'views/product.xml',
         'views/product_category.xml',
         'views/machine.xml',
-        'views/treatment_card.xml'
+        'views/treatment_card.xml',
+        'views/qa.xml',
 
     ],
     # only loaded in demonstration mode

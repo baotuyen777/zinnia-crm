@@ -68,6 +68,12 @@
             <field name="res_model">crm.apm</field>
             <field name="domain">[('rate','=','success')]</field>
         </record>
-        <menuitem id="appointment_list_menu" action="apm_list_action" parent="menu_heading_partner"/>
+        <record model="ir.actions.act_window" id="deal_list_action">
+            <field name="name">Deal</field>
+            <field name="res_model">crm.apm</field>
+            <field name="domain">[('rate','=','success')]</field>
+        </record>
+        <menuitem id="deal_list_menu" action="deal_list_action" parent="menu_heading_profile"/>
+        <menuitem id="appointment_list_menu" action="apm_list_action" parent="menu_heading_profile"/>
     </data>
 </odoo>

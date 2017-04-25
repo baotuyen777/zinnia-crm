@@ -5,9 +5,10 @@
         <menuitem id="crm_main_menu" name="CRM"/>
         <!-- Heading left side menu -->
         <menuitem id="menu_heading_partner" name="Partner infomation" parent="crm_main_menu" sequence="1"/>
-        <menuitem id="menu_heading_question" name="Question bank" parent="crm_main_menu" sequence="2"/>
+        <menuitem id="menu_heading_qa" name="Question bank" parent="crm_main_menu" sequence="2"/>
+        <menuitem id="menu_heading_profile" name="Customer profile" parent="crm_main_menu" sequence="3"/>
         <menuitem id="config_param_menu" name="Configuration parameter" parent="crm_main_menu" sequence="5"/>
-        <menuitem name="Product" id="menu_heading_product" parent="crm_main_menu" sequence="3"/>
+        <menuitem name="Product" id="menu_heading_product" parent="crm_main_menu" sequence="6"/>
         <menuitem name="Treatment" id="menu_heading_treatment" parent="crm_main_menu" sequence="4"/>
     </data>
 </odoo>

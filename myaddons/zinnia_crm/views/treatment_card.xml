@@ -62,6 +62,6 @@
                 </form>
             </field>
         </record>
-        <menuitem id=" menu_treatment_card" action="treatment_card_action" parent="menu_heading_treatment"/>
+        <menuitem id="menu_treatment_card" action="treatment_card_action" parent="menu_heading_treatment"/>
     </data>
 </odoo>
